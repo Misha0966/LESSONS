@@ -6,10 +6,10 @@
  
         int a, b;
  
-        Console.WriteLine("-9,-3");
+        Console.WriteLine("2,10");
  
-        a = -9;
-        b =-3;
+        a = 2;
+        b =10;
  
         if (a > b)
  

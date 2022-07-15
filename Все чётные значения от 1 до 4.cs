@@ -1,5 +1,15 @@
-﻿int n =5;
-    
-for (int i = n; i >= 1; i--)
-    if (i % 2 == 0)
-        Console.WriteLine(i);
+// На вход принимает число (N), а на выходе показывает все чётные числа от 1 до N
+string? imputLine = Console.ReadLine();
+if (imputLine != null)
+{
+int imputNumber = 8;
+int startNumber = 2;
+string lineOutput = ("");
+while (startNumber <= imputNumber - 2)
+{
+lineOutput = lineOutput + startNumber + ", ";
+startNumber += 2;
+}
+lineOutput = lineOutput + startNumber;
+Console.WriteLine(lineOutput);
+}

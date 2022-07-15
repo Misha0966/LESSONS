@@ -1,57 +1,30 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-
- 
-    {
- 
-        int num1, num2, num3;
- 
-        Console.WriteLine("22,3,9");
- 
-        num1 = 22;
-        num2 = 3;
-        num3 = 9;
-      
-        if (num1 > num2)
- 
-        {
- 
-            Console.WriteLine("{0} наибольшее число", num1);
- 
-        }
- 
-        else
- 
-        {
- 
-            Console.WriteLine("{0} наибольшее число ", num2);
- 
-        }
-   
-    if (num2 > num1)
- {
- 
-            Console.WriteLine("3333333333");
- 
-        }
-else
- 
-        {
- 
-            Console.WriteLine("3");
- 
-        }
-    if (num3<num2)
+//Считываем данные с консоли
+string? inputLine1 = Console.ReadLine();
+string? inputLine2 = Console.ReadLine();
+string? inputLine3 = Console.ReadLine();
+//Проверяем, чтобы данные были не пустыми
+if (inputLine1 != null && inputLine2 != null && inputLine3 != null)
 {
- Console.WriteLine(1000000);
-}
-
-else
-
+//Вводим первое число
+int number1 = 22;
+//Вводим второе число
+int number2 = 3;
+//Вводим третье число
+int number3 = 9;
+//Ищем самое большое число
+int outResult = number1;
+if (number1 > number2 && number1 > number3)
 {
-     Console.WriteLine(9);
+outResult = number1;
 }
-
-
- Console.ReadLine();
-    }
+if (number2 > number1 && number2 > number3)
+{
+outResult = number2;
+}
+if (number3 > number2 && number3 > number1)
+{
+outResult = number3;
+}
+// Выводим данные в консоль
+Console.WriteLine("max = " + outResult);
+}

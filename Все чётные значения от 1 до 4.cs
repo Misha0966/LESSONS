@@ -2,7 +2,7 @@
 string? imputLine = Console.ReadLine();
 if (imputLine != null)
 {
-int imputNumber = 8;
+int imputNumber = 5;
 int startNumber = 2;
 string lineOutput = ("");
 while (startNumber <= imputNumber - 2)

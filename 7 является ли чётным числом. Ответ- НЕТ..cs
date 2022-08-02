@@ -1,7 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-
-  int i;
+            int i;
  
             i = 7;
  
